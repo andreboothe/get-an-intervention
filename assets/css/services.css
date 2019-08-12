@@ -1,0 +1,130 @@
+.services {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 75px;
+}
+
+.services__title {
+  height: 37px;
+  width: 100%;
+  color: #303a3b;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 37px;
+}
+
+.services__text-content {
+  color: #303a3b;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: justify;
+}
+
+.services_button {
+  height: 100px;
+  width: 100%;
+  border: 3px solid #5bc8af;
+  background-color: #ffffff;
+  border-radius: 2px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  padding: 0;
+}
+
+.services_button.hover {
+  border-radius: 2px;
+  background-color: #303a3b;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #5bc8af;
+  border: none;
+}
+
+.services_button.clicked {
+  border-radius: 2px;
+  background-color: #303a3b;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  color: #5bc8af;
+  border: none;
+}
+
+.services__buttons.grid-container {
+  margin-top: 24px;
+}
+
+.services_button--subtext {
+  height: 36px;
+  width: 100%;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.services_button--subhead {
+  height: 18px;
+  width: 100%;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  color: #5bc8af;
+}
+
+@media (max-width: 900px) and (min-width: 768px) {
+  .services__title {
+    height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .services__text-content {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .services_button {
+    height: 80px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .services {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .services_button {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .services_button--subhead {
+    height: 36px;
+  }
+
+  .services__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .services__text-content p {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .services {
+    padding-top: 20px;
+  }
+}

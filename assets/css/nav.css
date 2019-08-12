@@ -1,0 +1,123 @@
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: #303a3b;
+  display: flex;
+  align-items: center;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 52px;
+  width: fit-content;
+  float: right;
+  margin-top: 29px;
+}
+
+.nav ul li {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.nav ul .nav__link a {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  word-spacing: 5px;
+}
+
+.nav ul .nav__link {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav__link.number {
+  height: 26px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: right;
+}
+
+.nav .nav__logo {
+  float: left;
+  height: 26px;
+  width: 220px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 29px;
+}
+
+.nav ul .nav__link a:hover {
+  text-decoration: underline;
+  font-weight: 900 !important;
+}
+
+.nav__link .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .nav__bar li {
+    display: none;
+  }
+  .nav__bar .icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .nav__bar.responsive {
+    position: relative;
+  }
+  .nav__bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav__bar.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+    background-color: #303a3b;
+  }
+
+  .nav__bar li:nth-child(4) {
+    display: none;
+  }
+  .nav__bar li:nth-child(5) {
+    display: none;
+  }
+
+  .icon a {
+    height: 21px;
+    width: 30px;
+  }
+
+  i {
+    font-size: 21px !important;
+    width: 30px;
+  }
+  .nav__bar.responsive li:not(:last-child) {
+    text-align: right;
+  }
+
+  .nav__bar.responsive li:first-child {
+    padding-top: 20px;
+  }
+}
